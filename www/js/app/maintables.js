@@ -39,10 +39,7 @@ function onFSSuccessJS(fileSystem) {
 }
 //The directory entry callback
 function gotDir(d){
-	
-	
-	
-	
+
     console.log("criou o diretorio das tabelas JS");
     DATADIRJS = d;
     var reader = DATADIRJS.createReader();
@@ -68,7 +65,7 @@ function gotDir(d){
 				'',         // callback
 				'Conexão muito baixa',            // title
 				'OK'                  // buttonName
-			);
+			)
 		}
 			
 		if (knownfilesjs.length == 0 && connectionStatus == "NoConnection" ) {
@@ -139,7 +136,7 @@ function appReady(){
 	$('.loginform').hide();
 	var fi = 0;
 	
-	
+	// Verifica as tabelas do mobile
     $.get("http://www.dimebras.com.br/mobile?fn=getTables", {}, function(res) {
         if (res.length > 0) {
         	totalJS = res.length;

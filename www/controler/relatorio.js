@@ -5,23 +5,14 @@ function Relatorio() {
 	
 	// Lista relatorios da base
 	this.listRelatorio = function() {
-		
 		console.log("listRelatorio");
-
 		storage.area = 'relatorio';
-		
 		var flista        =  $('#relatorios #lrelatorios');
 		$('#relatorios #lrelatorios li').remove();
-		
 		$.mobile.loading('show',{text: "Carregando lista",textVisible:true,theme:"a"});
-	
-		db.transaction(function (tx) {
-			
-			
+		db.transaction(function (tx) {			
 		var sql = 'SELECT * FROM relatorio  WHERE (filial = \''+storage.filial+'\' or filial = \'\') and (usuario = \''+storage.ref+'\' or usuario = \'\')  ';
 
-		console.log(sql); 
-		
         tx.executeSql(sql, [], function (tx, results) {
 			
             var len = results.rows.length, i;

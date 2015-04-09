@@ -2,7 +2,7 @@ function Relatorio() {
 	
 	this.db = db;
 	
-	
+	 
 	// Lista relatorios da base
 	this.listRelatorio = function() {
 		console.log("listRelatorio");

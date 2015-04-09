@@ -221,6 +221,7 @@ function Configurar()
 	}
 
 	this.sendGAPV = function(page) {
+		// Verifica se tem internet e envia a página
 		if ( connectionStatus == "Ethernet"  || connectionStatus == "WiFi"  || connectionStatus == "Cell4G" ) {
 			ga('send', 'pageview', {'page': page});
 		}

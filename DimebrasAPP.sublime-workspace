@@ -1,0 +1,544 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"FONT",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "22| Organizações\n21| Ação Social\n20| Educação\n19| Meio Ambiente\n18| Saúde\n17| Segurança\n16| Política\n15| Órgãos Gorvernamentais\n14| Marketing\n13| Educação/Professores\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 170,
+				"line_ending": "Windows",
+				"name": "22| Organizações"
+			}
+		},
+		{
+			"contents": "<?php\n$postData = JRequest::getVar('form');\n\n@ini_set('user_agent', 'My-Application/2.5');\n@ini_set('allow_url_fopen', '1');\n\nif ($postData['interesses']) {\n	\n	if (count($postData['interesses'])>0) {\n		$postData['hiddenlists'] = $postData['hiddenlists'].','.implode(',',$postData['interesses']) ;	\n	}\n}\n\n\n\n \n$url = rtrim(JURI::root(),'/').'/index.php?option=com_acymailing&ctrl=sub&task=optin&hiddenlists={hiddenlists}&user[name]={nome}&user[email]={email}';\n \n$replace = array();\nforeach($postData as $id => $oneVal){\n if(is_string($oneVal)) $replace['{'.strtolower($id).'}'] = urlencode($oneVal);\n else $replace['{'.strtolower($id).'}'] = urlencode(implode(',',$oneVal));\n}\n \n$url = str_replace(array_keys($replace),$replace,$url);\n\n\n \n$ch = curl_init();\ncurl_setopt($ch, CURLOPT_URL,$url);\n//curl_setopt($ch, CURLOPT_FAILONERROR, 1);\n//curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);\ncurl_setopt($ch, CURLOPT_TIMEOUT, 25);\n//curl_setopt($ch, CURLOPT_POST, 1);\n \n$result = curl_exec($ch);\n\n\ncurl_close($ch);\n",
+			"file": "/C/Users/eduardo/Desktop/b/news.php",
+			"file_size": 1039,
+			"file_write_time": 130722115937778019,
+			"settings":
+			{
+				"buffer_size": 1006,
+				"line_ending": "Windows",
+				"name": "$postData = JRequest::getVar('form');"
+			}
+		},
+		{
+			"contents": "Plano Base\n2 divulgações por mês\nAdequado para profissionais independentes ou freelancers, que assessoram demandas mais pontuais.\nR$ 85,00\n(R$ 42,50 por divulgação)\n\nPlano Empresas\n4 divulgações por mês\nAdequado às assessorias menores, mas que mantém frequência na divulgação dos clientes.\nR$ 162,00\n	)\n\nPlano Super\n8 divulgações por mês\nPlanejado para assessorias de imprensa com maior volume de produção e que utilizam estratégias de visibilidade constante.\nR$ 308,00 \n(R$ 38,50 por divulgação)\n\nHIPER\nSolicite orçamento\nDecida quantos disparos quer por mês ou ainda contrate nossa assessoria de imprensa para produzir seu conteúdo",
+			"settings":
+			{
+				"buffer_size": 633,
+				"line_ending": "Windows",
+				"name": "Plano Base"
+			}
+		},
+		{
+			"contents": "Academia em sua casa - 1 m\nAcademia em sua casa - 50 cm\nAcademia em suas mãos - 50 cm\nAcademia em suas mãos - 1 m\nEscada de Treinamento\nFita de Suspensão\nSala de treinamento",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Windows",
+				"name": "Academia em sua casa - 1 m"
+			}
+		},
+		{
+			"contents": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"settings":
+			{
+				"buffer_size": 446,
+				"line_ending": "Windows",
+				"name": "Lorem ipsum dolor sit amet, consectetur adipisicin"
+			}
+		},
+		{
+			"contents": "Muitos de nós preferem realmente escalar o Monte Everest do que eliminar maus hábitos , e muito menos tentar quebrá-los . Felizmente, com uma atitude positiva e vontade de mudar, colocar esses comportamentos negativos para descansar se torna muito menos de um desafio. Nós conversamos com Nan Russell, autor de quatro livros, incluindo \" Trust, Inc. \" e \" O Líder Titleless \", para descobrir quais os maus hábitos são mais tóxicos no escritório, por que você deve evitá-los e como você pode começar a trabalhar para reconstruir qualquer confiança que foi danificado.\n\nMuitos de nós preferem escalar o monte everest do que eliminar certos hábitos. Felizmente, com uma atitude positiva e vontade de mudar, podemos \nmudar estes comportamentos negativos. Nan Russel, autor de quatro livros, incluindo \"Trust, Inc.\" e \" O Líder sem título\", da dicas de quais são os hábitos mais tóxicos no escritório, por que você deve evitá-los e como você pode trabalhar para reconstruir qualquer confiança danificada.",
+			"settings":
+			{
+				"buffer_size": 999,
+				"line_ending": "Windows",
+				"name": "Muitos de nós preferem realmente escalar o Monte E"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"selected_items":
+		[
+			[
+				"Pacakge Control",
+				"Package Control: Install Package"
+			],
+			[
+				"Pacakge",
+				"Package Control: Install Package"
+			],
+			[
+				"Packget",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Packge Control ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pacal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package COntrol",
+				"Package Control: Install Package"
+			],
+			[
+				"Package COntrol ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Contro",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/projetos/DimebrasAPP/DMAPP"
+	],
+	"file_history":
+	[
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/component.php",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/k2.less",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/custom.less",
+		"/Z/Sites/pauta/SITE/administrator/components/com_droppics/views/droppics/tmpl/default.php",
+		"/Z/Sites/pauta/SITE/plugins/editors-xtd/droppicsbtn/droppicsbtn.php",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/icomoon.less",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/master.less",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/pricetable.less",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/index.php",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/index.html",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/js/main.js",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/news.less",
+		"/Z/Sites/pauta/SITE/administrator/components/com_droppics/controllers/category.php",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/html/mod_custom/default.php",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/frontend-edit.less",
+		"/C/Users/eduardo/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/news",
+		"/Z/Sites/pauta/SITE/sftp-config.json",
+		"/C/Users/eduardo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/theme.less",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/templateDetails.xml",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/comingsoon.php",
+		"/Z/Sites/pauta/SITE/templates/shaper_helix3/less/custom.css",
+		"/Z/Sites/pauta/SITE/modules/mod_custom/tmpl/default.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"content:'",
+			"content: '",
+			"ico",
+			"div.itemIntroText",
+			"col-md-4",
+			"&plano",
+			"contato",
+			"30px",
+			"releases",
+			".sppb-section-title"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"col-md-3",
+			"?plano",
+			"contato-site"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"auto_name": "22| Organizações",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/eduardo/Desktop/b/news.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1005,
+								6
+							]
+						],
+						"settings":
+						{
+							"auto_name": "$postData = JRequest::getVar('form');",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								633
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Plano Base",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								173
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Academia em sua casa - 1 m",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Lorem ipsum dolor sit amet, consectetur adipisicin",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								999,
+								568
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Muitos de nós preferem realmente escalar o Monte E",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 122.0
+	},
+	"project": "DimebrasAPP.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"theme",
+				"templates\\shaper_helix3\\less\\theme.less"
+			],
+			[
+				"custom",
+				"templates\\shaper_helix3\\less\\custom.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Z:\\Sites\\pauta\\SITE\\pauta.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 158.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

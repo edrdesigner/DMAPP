@@ -1,0 +1,296 @@
+html, body {
+	height: 100%;
+	
+}
+.home .contents {
+	min-width: 400px;
+	
+	height:94% !important;
+	/*width: 150vh;*/
+	margin: 0 auto;
+	
+	font-family: 'Roboto', sans-serif
+}
+.blocks-container {
+	/*padding: 2px 0 100px*/
+}
+.block {
+	position: relative;
+	min-width: 33%;
+	max-width: 33%;
+	height:150px;
+	/*
+min-height:calc(110px * (30/50));
+max-height:calc(360px * (30/50));
+	width: 50vh;
+	height: 23vh;
+		height:200px;
+	*/
+
+	border: 3px solid rgba(255,255,255,.1);
+	padding: 10px 30px;
+	box-sizing: border-box;
+	float: left;
+	/*font-size: 8vh; */
+	font-size:2em;
+	color: #fff;
+	transition: all .3s linear;
+	cursor: pointer;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	text-align:center;
+}
+
+.block .icon {
+	font-size:3em;
+	
+}
+
+.block div{
+	font-size:1em;
+	text-align:center;	
+}
+
+@media (max-width: 600px) {
+	.block {
+		height:100px;
+		font-size:13px !important;
+	}
+	.block .icon {
+		font-size:2em;
+		
+	}
+	.block div{
+		font-size:14px;
+		text-align:center;	
+	}
+}
+
+
+
+.block:nth-child(3n+3) {
+	border-right: 0
+}
+.block:nth-child(3n+1) {
+	border-left: 0
+}
+.color-1 {
+	background-color: #7db000
+}
+.color-1:hover {
+	color: #7db000;
+	background-color: #fff
+}
+.color-2 {
+	background-color: #b09969
+}
+.color-2:hover {
+	color: #b09969;
+	background-color: #fff
+}
+.color-3 {
+	background-color: #e52749
+}
+.color-3:hover {
+	color: #e52749;
+	background-color: #fff
+}
+.color-4 {
+	background-color: #7196b9
+}
+.color-4:hover {
+	color: #7196b9;
+	background-color: #fff
+}
+.color-5 {
+	background-color: #e5ac18
+}
+.color-5:hover {
+	color: #e5ac18;
+	background-color: #fff
+}
+.color-6 {
+	background-color: #2b4a72
+}
+.color-6:hover {
+	color: #2b4a72;
+	background-color: #fff
+}
+.color-7 {
+	background-color: #ea7332
+}
+.color-7:hover {
+	color: #ea7332;
+	background-color: #fff
+}
+.color-8 {
+	background-color: #f66
+}
+.color-8:hover {
+	color: #f66;
+	background-color: #fff
+}
+.color-9 {
+	background-color: #1e9d9e
+}
+.color-9:hover {
+	color: #1e9d9e;
+	background-color: #fff
+}
+.clearfix {
+	clear: both;
+	float: none
+}
+@media all and (max-height: 440px) {
+.container {
+	font-size: 10px
+}
+.hero-unit h1 {
+	font-size: 31px
+}
+.hero-unit .text {
+	font-size: 18px
+}
+.signup-container {
+	font-size: 18px
+}
+}
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block
+}
+audio, canvas, video {
+	display: inline-block
+}
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+[hidden] {
+display:none
+}
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+body {
+	margin: 0
+}
+a:focus {
+	outline: thin dotted
+}
+a:active, a:hover {
+	outline: 0
+}
+h1 {
+	/*font-size: 3vh;
+	margin:0px;
+	transition: all .3s linear;
+	font-family:'Lato';*/
+}
+abbr[title] {
+	border-bottom: 1px dotted
+}
+b, strong {
+	font-weight: 700
+}
+dfn {
+	font-style: italic
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
+}
+mark {
+	background: #ff0;
+	color: #000
+}
+code, kbd, pre, samp {
+	font-family: monospace, serif;
+	font-size: 1em
+}
+pre {
+	white-space: pre-wrap
+}
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019"
+}
+small {
+	font-size: 80%
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+sup {
+	top: -.5em
+}
+sub {
+	bottom: -.25em
+}
+img {
+	border: 0
+}
+svg:not(:root) {
+	overflow: hidden
+}
+figure {
+	margin: 0
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em
+}
+legend {
+	border: 0;
+	padding: 0
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0
+}
+button, input {
+	line-height: normal
+}
+button, select {
+	text-transform: none
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+button[disabled], html input[disabled] {
+	cursor: default
+}
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+-webkit-appearance:none
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+textarea {
+	overflow: auto;
+	vertical-align: top
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}

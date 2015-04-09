@@ -1,0 +1,23 @@
+
+div.ones { width: 95%;  margin:auto;}
+
+div.item { float: left; width: 31% ; padding:0px; min-height:210px ;  }
+
+@media (min-width: 701px) {
+	div.item { float: left; width: 31% !important; padding:0px; min-height:185px !important;  }
+}
+
+
+@media (max-width: 600px) {
+	div.item { float: left; width: 48% !important; padding:0px; min-height:200px !important;  }
+}
+
+@media (max-width: 340px) {
+	div.item { float: left; width: 98% !important; padding:0px; min-height:170px !important;  }
+}
+
+
+
+div.item { background:#FFF; display: block; margin: 2px; border: 1px solid #E6E6E6; }
+div.item img { display: block; width: 100%; height: auto; }
+div.item .title  { font-family: 'Arial'; font-size: 2.1vw; padding:10px; }

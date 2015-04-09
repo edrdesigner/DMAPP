@@ -1,0 +1,725 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>Jobs APP :: iPed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+<!-- bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.css" id='Bootstrap' />
+
+<!-- jQueryMobileCSS - original without styling -->
+<link rel="stylesheet" href="css/jquerymobile.css" />
+
+<!-- nativeDroid core CSS -->
+<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+<!-- nativeDroid: Light/Dark -->
+<link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+<!-- nativeDroid: Color Schemes -->
+<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+
+
+
+<link rel="stylesheet" href="css/style.css" id='Styles' />
+
+    
+<script src="phonegap.js"></script>
+ 
+<script type="text/javascript" src="js/deviceCheck.js"></script>
+
+<script src="js/head.load.min.js"></script>  
+<script src="js/core/jquery.js"></script>
+
+
+<script src="js/maintables.js"></script>
+<script src="js/main.js"></script>
+
+<script src="controler/monta_app_view.js"></script>
+
+
+<!-- CRIA TABELA DE LOGIN E VERIFICA SE USER ESTÃ� AUTORIADO NÃ€O Ã‰ NECESSARIO NAS INTERNAS -->
+<script src="js/phpjs/utf8_encode.js"></script>
+<script src="js/phpjs/md5.js"></script>      
+
+<!-- jQuery / jQueryMobile Scripts -->
+</head>
+
+<body>
+<section id="pre-loader">
+	<div class="spinner"></div>
+    <div id="status" class="contador_load">Aguarde...</div>
+</section>
+    
+<div data-role="page" id="login" data-theme='b'>
+
+  <div data-role="content">
+      <div data-nativedroid-plugin="homescreen" data-nativedroid-background="images/azul.jpg">
+          <div data-nativedroid-role='widget' 
+             data-nativedroid-widget-width='4'
+             data-nativedroid-widget-height='1' 
+             data-nativedroid-widget-offset-top='0' 
+             data-nativedroid-widget-offset-left='0'>
+
+             <img src="images/logojobs.png" />
+
+          </div>
+
+
+
+           <div data-nativedroid-role='widget' 
+            
+             data-nativedroid-widget-width='4' 
+             data-nativedroid-widget-height='1' 
+             data-nativedroid-widget-offset-top='2' 
+             data-nativedroid-widget-offset-left='0'>
+                    <div class="inset">
+                        <form id="loginform" class="loginform">
+                        <ul data-role="listview" data-inset="true">
+                            <li>
+                               
+                                <input type="text" name="login" id="login" value="" data-clear-btn="true" placeholder="Login">
+                             </li>
+                             
+                              <li>
+                               
+                                <input type="password" name="senha" id="senha" value="" data-clear-btn="true" placeholder="Senha">
+                             </li>
+                              <li>
+                                
+                                   <button type="button" class="btn" data-theme="c" onClick="logar()">Trabalhar</button>
+                                
+                            </li>
+                          </ul>
+                          </form>
+                    </div>
+                    </div>
+      </div>
+  </div>
+
+</div>
+
+
+<div data-role="page" id="home" data-theme='b'>
+  <div data-role="content">
+    <div data-nativedroid-plugin="splashscreen" data-nativedroid-splashscreen-time="2" data-nativedroid-splashscreen-animation="fadeOut" data-nativedroid-background="http://nativedroid.godesign.ch/res/img/splashscreenbg.png">
+      <div class='splashScreenExample'>
+        <h1>JOBS</h1>
+        <h2>Vamos trabalhar um pouco.</h2>
+        <h3>Dimebras e Alfamed</h3>
+        <div class='splashScreenDroid'></div>
+      </div>
+    </div>
+    
+    <div data-nativedroid-plugin="homescreen" data-nativedroid-background="">
+      <div>
+        
+        <div data-nativedroid-role='widget'
+
+						 data-nativedroid-widget-width='4'
+						 data-nativedroid-widget-offset-top='0'
+						 data-nativedroid-widget-offset-left='0'>
+
+          <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2><div class="pull-left">Jobs</div>  <div id="dadosUsuario" class="pull-right">Aguarde..</div></h2>
+            </div>
+          </div>
+        </div>   
+
+          <div class="container" style="padding-top:10px;">
+            <div class="row">
+              <div class="col-sm-12"> <a href="#catalogo" data-ajax="false" data-transition="slide">
+                <div class="ic-g ic-blue" style="height:12em !important">
+                  <div class="icon icon-th"></div>
+                  <div>Catalogo</div>
+                </div>
+                </a> </div>
+              <br class="clearfix" />
+            </div>
+            <!-- row -->
+            
+            <div class="row">
+              <div class="col-sm-6 col-xs-6"> <a href="#promocoes" data-ajax="false"  data-transition="slide">
+                <div class="ic ic-blue-b">
+                  <div class="icon icon-tags" ></div>
+                  <div>Promocoes</div>
+                </div>
+                </a> </div>
+              </a>
+              <div class="col-sm-3 col-xs-6"> <a href="#contatos" data-ajax="false" data-transition="slide">
+                <div class="ic ic-blue-c">
+                  <div class="icon icon-phone" ></div>
+                  <div>Contatos</div>
+                </div>
+                </a> </div>
+              <div class="col-sm-3 col-xs-6"> <a href="#cadastro" data-ajax="false" data-transition="slide">
+                <div class="ic ic-yellow">
+                  <div class="icon icon-file" ></div>
+                  <div>Cadastros</div>
+                </div>
+                </a> </div>
+              <div class="col-sm-3 col-xs-6"> <a href="#relatorios" data-ajax="false" data-transition="slide">
+                <div class="ic ic-purple">
+                  <div class="icon icon-bar-chart" ></div>
+                  <div>Relatorios</div>
+                </div>
+                </a> </div>
+              </a>
+              <div class="col-sm-3 col-xs-6"> <a href="#videos" data-ajax="false" data-transition="slide">
+                <div class="ic ic-green">
+                  <div class="icon icon-play" ></div>
+                  <div>Videos</div>
+                </div>
+                </a> </div>
+              <div class="col-sm-6 col-xs-6"> <a href="#lancamentos" data-ajax="false" data-transition="slide">
+                <div class="ic ic-red">
+                  <div class="icon icon-star" ></div>
+                  <div>Lancamentos</div>
+                </div>
+                </a> </div>
+            </div>
+            <!--row -->
+            
+            <div class="row">
+              <div class="col-sm-3 col-xs-6"> <a href="#recados" data-ajax="false" data-transition="slide">
+                <div class="ic ic-brow">
+                  <div class="icon icon-comments" ></div>
+                  <div>Recados</div>
+                </div>
+                </a> <a href="#financeiro" data-ajax="false" data-transition="slide">
+                <div class="ic ic-red2">
+                  <div class="icon icon-dollar" ></div>
+                  <div>Financeiro</div>
+                </div>
+                </a> </div>
+              <div class="col-sm-9 col-xs-6"> <a href="#infobras" data-ajax="false" data-transition="slide">
+                <div class="ic-g2 ic-orange">
+                  <div class="icon icon-rss" ></div>
+                  <div>Infobras</div>
+                </div>
+                </a> </div>
+            </div>
+          </div>
+          <!-- container --> 
+        </div>
+        
+        <!-- segunda linha --> 
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- pagina catalogo -->
+<div data-role="page" id="catalogo" data-theme='b'>
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+          <a href="#mypanelC" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+          <h1>Cat&aacute;logo</h1>  
+           <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+         
+      </div>
+
+       <div class="apanel">
+          <div data-role="panel" id="mypanelC" data-theme="b">
+          
+          </div>      
+      </div>
+  
+  <div data-role="content">
+  	 <div class="inset">
+        <div class='message info'>
+					<i class='icon-lightbulb'></i>
+					<p>Preencha os dados do formulario abaixo para buscar os produtos desejados.</p>
+			  </div><!-- / message -->
+
+
+        <div>
+                   <form action="" id="formCatalogo" data-ajax="false" method="get">
+                       <ul data-role="listview" data-inset="true">
+                          
+                          <li data-role="fieldcontain">
+                                <label for="fordem" class="select">Ordem</label>
+                                <select name="select-choice-1" id="fordem" data-native-menu="true">
+                                    <option value="1">Alfabetica</option>
+                                    <option value="2">Fabricante</option>
+                                   
+                                </select>
+                             </li>
+                             
+                             
+                             <li data-role="fieldcontain">
+                                <label for="flaboratorio" class="select">Laboratorio</label>
+                                <select name="select-choice-1" id="flaboratorio" data-native-menu="true">
+                                    <option value="">Selecione</option>
+                                   
+                                </select>
+                             </li>
+                             
+                              <li data-role="fieldcontain">
+                                <label for="fcategoria" class="select">Categoria</label>
+                                <select name="fcategoria" id="fcategoria" data-native-menu="true">
+                                    <option value="">Selecione </option>
+                                   
+                                </select>
+                             </li>
+                             
+                            
+                            
+                           
+                            
+                            <li data-role="fieldcontain">
+                                <label for="fdestaque">Lan&ccedil;amento:</label>
+                                <select name="fdestaque" id="fdestaque" data-role="slider">
+                                    <option value="0">N&atilde;o</option>
+                                    <option value="1">Sim</option>
+                                </select>
+                            </li>
+                            
+                             <li data-role="fieldcontain">
+                                <label for="ftiporesultado" class="select">Tipo de Resultado</label>
+                                <select name="ftiporesultado" id="ftiporesultado" data-native-menu="true">
+                                 <option value="catalogoGaleria">Galeria (imagens)</option>
+                                    <option value="catalogoBusca">Normal (1 em baixo do outro)</option>
+                                   
+                                   
+                                </select>
+                             </li>
+                            
+                            
+                             <li>
+                                <fieldset class="ui-grid-a">
+                                        <div class="ui-block-a"><button type="reset" data-theme="b">Cancelar</button></div>
+                                        <div class="ui-block-b"><button onclick="doBuscaCatalogo()" type="button" data-theme="b">Filtrar</button></div>
+                                </fieldset>
+                            </li>
+                         </ul>
+                   </form>
+                </div><!-- /form -->  
+
+
+
+
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+
+<!-- / pagina catalogo -->
+
+
+
+<!-- pagina catalogoBusca -->
+<div data-role="page" id="catalogoBusca" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelCB" data-theme="b">
+          
+         </div>       
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelCB" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Resultado da Busca</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+
+      
+  
+  <div data-role="content">
+    <div class="inset">
+      <div id="my-list2">
+      <ul data-role="listview" id="litens" data-inset="false"  data-icon="false" data-divider-theme="b" data-filter-theme="b" data-filter="true"  data-filter-placeholder="Buscar por nome">
+	
+
+      </ul>
+      </div>
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+
+<!-- / pagina catalogoBusca -->
+
+
+
+
+<!-- pagina catalogoGaleria -->
+<div data-role="page" id="catalogoGaleria" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelCG" data-theme="b">
+          
+         </div>       
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelCG" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Resultado da Busca</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+
+      
+  
+  <div data-role="content">
+    <div class="inset">
+      	<div class="gallery" id="galeriaC">
+        	
+        </div>
+      
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+
+<!-- / pagina catalogoGaleria -->
+
+
+
+<!-- pagina catalogoItem -->
+<div data-role="page" id="catalogoItem" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelCI" data-theme="b">
+          
+         </div>       
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelCI" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Detalhes do Item</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+
+      
+  
+  <div data-role="content">
+    <div class="inset">
+     	<div id="verticalWrapper">
+			<div id="verticalScroller">
+            	<h2 id="nome"></h2>
+        		<div id="imagem" align="center"></div>
+                <div class="dados">
+                	
+     				<table width="100%" border="0" cellspacing="0" cellpadding="0" data-role="table" id='table-column-toggle' data-mode='columntoggle' class='ui-responsive table-stroke'>
+                      
+                      
+                       <tr>
+                        <td width="30%">C&oacute;digo</td>
+                        <td id="codigo">&nbsp;</td>
+                      </tr>
+                      
+                       <tr>
+                        <td width="30%">Marca</td>
+                        <td id="marca">&nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="30%">Categoria</td>
+                        <td id="categoriaP">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>Pre&ccedil;o</td>
+                        <td id="preco">&nbsp;</td>
+                       
+                      </tr>
+                      <tr>
+                      	<td>Pre&ccedil;o Lista</td>
+                        <td id="precoLista">&nbsp;</td>
+                      </tr>
+                      <tr>
+                      	<td>Desconto Normal</td>
+                        <td id="desconto">&nbsp;</td>
+                      </tr>
+                      <tr>
+                      	<td>Desconto Promo</td>
+                        <td id="descontoPromo">&nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                      	<td>Vencimento</td>
+                        <td id="vencimento">&nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                      	<td>Status</td>
+                        <td id="status">&nbsp;</td>
+                      </tr>
+                    </table>
+
+                                       
+                </div>
+       		</div>
+		</div>
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+
+<!-- / pagina catalogoItem -->
+
+
+
+<!-- pagina promocoes -->
+<div data-role="page" id="promocoes" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelPromo" data-theme="b">
+          
+        </div>   
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelPromo" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Promocoes</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+
+<!-- / pagina promocoes -->
+
+<!-- pagina contatos -->
+<div data-role="page" id="contatos" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelCo" data-theme="b">
+          
+        </div>   
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelCo" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Contatos</h1>  
+             <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+
+<!-- / pagina contatos -->
+
+<!-- pagina cadastro -->
+<div data-role="page" id="cadastro" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelCa" data-theme="b">
+          
+        </div>   
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelCa" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Cadastro</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina cadastro -->
+
+
+<!-- pagina relatorios -->
+<div data-role="page" id="relatorios" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelRe" data-theme="b">
+        </div>   
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelRe" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Relatorios</h1> 
+             <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina relatorios -->
+
+
+<!-- pagina videos -->
+<div data-role="page" id="videos" data-theme='b'>
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelVi" data-theme="b">
+          
+        </div>  
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelVi" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Videos</h1>  
+             
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina videos -->
+
+<!-- pagina lancamentos -->
+<div data-role="page" id="lancamentos" data-theme='b'>
+
+
+    <div  class="apanel">
+    	<div data-role="panel" id="mypanelLa" data-theme="b">
+          
+        </div>  
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelLa" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Lancamentos</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina lancamentos -->
+
+
+<!-- pagina recados -->
+<div data-role="page" id="recados" data-theme='b' data-url="recados">
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelRec" data-theme="b">
+          
+        </div>  
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelRec" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Recados</h1> 
+             <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina recados -->
+
+
+<!-- pagina financeiro -->
+<div data-role="page" id="financeiro" data-theme='b' data-url="financeiro">
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelFi" data-theme="b">
+          
+        </div> 
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelFi" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Financeiro</h1>  
+             <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina financeiro -->
+
+<!-- pagina infobras -->
+<div data-role="page" id="infobras" data-theme='b' data-url="infobras">
+
+
+    <div class="apanel">
+    	<div data-role="panel" id="mypanelIn" data-theme="b">
+          
+        </div> 
+    </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="#mypanelIn" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+            <h1>Infobras</h1>  
+              <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a>
+        </div>
+  
+  <div data-role="content">
+    <div class="inset">
+        Em breve
+    </div><!--/ inset -->
+        
+        
+  </div><!--/ content -->
+</div>
+<!-- / pagina infobras -->
+
+
+<script src="js/nativedroid.script.js"></script>
+
+<script type="text/javascript">
+// JavaScript Document
+$(document).ready(function(){					
+	(function(){
+	//START FUNCTIONS
+		//CLEAR PRELOADER --------------------------------//	
+		$(window).load(function() {
+			$("#pre-loader").fadeOut(400);	
+			getMainTables();
+		});
+	})();
+	
+});
+</script>
+
+
+
+
+</body>
+</html>

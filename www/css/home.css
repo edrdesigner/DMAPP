@@ -1,0 +1,185 @@
+@import url("font2/roboto.css");
+
+html, body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.blk {
+	transition:all 0.2s linear;	
+}
+
+
+/* aplica somente a partir de 800px em landscape */
+@media all and (max-width: 805px) and  (orientation: landscape) {
+	.blk {
+		 height:5em !important;	
+	}
+	
+	.blk2x {
+		 height:10em !important;		
+	}
+	
+	.blk .tit, .blk2x .tit  {
+		font-size:16px;
+	}
+	
+	.blk .fa {
+		margin-top:8px;
+		font-size:30px !important;
+		display:block;
+	}
+	
+	.blk2x .fa {
+		margin-top:8px;
+		display:block;
+	}
+}
+
+
+/* aplica somente a partir de 1000px em landscape */
+@media all and (min-width: 1000px) and  (orientation: landscape) {
+	.blk {
+		 height:5.5em !important;	
+	}
+	
+	.blk2x {
+		 height:11em !important;		
+	}
+	
+	.blk .tit, .blk2x .tit  {
+		font-size:18px;
+	}
+	
+	.blk .fa {
+		margin-top:10px;
+		font-size:35px !important;
+		display:block;
+	}
+	
+	.blk2x .fa {
+		margin-top:10px;
+		display:block;
+	}
+}
+
+
+/* aplica somente a partir de 1200px em landscape */
+@media all and (min-width: 1200px) and  (orientation: landscape) {
+	.blk {
+		 height:8em !important;	
+	}
+	
+	.blk2x {
+		 height:16em !important;		
+	}
+	
+	.blk .tit, .blk2x .tit  {
+		font-size:18px;
+	}
+	
+	.blk .fa {
+		margin-top:10px;
+		font-size:45px !important;
+		display:block;
+	}
+	
+	.blk2x .fa {
+		margin-top:30px;
+		display:block;
+	}
+}
+
+
+
+/* aplica somente a partir de 480px em landscape */
+
+
+
+
+
+
+
+/* aplica somente a partir de 800px em landscape */
+@media all and (max-width: 805px) and  (orientation: portrait) {
+	.blk {
+		 height:10em !important;	
+	}
+	
+	.blk2x {
+		 height:20em !important;		
+	}
+	
+	.blk .tit, .blk2x .tit  {
+		font-size:18px;
+	}
+	
+	.blk .icon {
+		margin-top:16px;
+		font-size:40px !important;
+		display:block;
+	}
+	
+	.blk2x .icon {
+		margin-top:30px;
+		display:block;
+	}
+}
+
+
+/* aplica somente a partir de 1000px em landscape */
+@media all and (min-width: 1000px) and  (orientation: portrait) {
+	.blk {
+		 height:12em !important;	
+	}
+	
+	.blk2x {
+		 height:24em !important;		
+	}
+	
+	.blk .tit, .blk2x .tit  {
+		font-size:26px;
+	}
+	
+	.blk .icon {
+		margin-top:10px;
+		font-size:60px !important;
+		display:block;
+	}
+	
+	.blk2x .icon {
+		margin-top:60px;
+		display:block;
+	}
+}
+
+
+/* aplica somente a partir de 1200px em landscape */
+@media all and (min-width: 1200px) and  (orientation: portrait) {
+	.blk {
+		 height:16em !important;	
+	}
+	
+	.blk2x {
+		 height:32em !important;		
+	}
+	
+	.blk .tit, .blk2x .tit  {
+		font-size:30px;
+	}
+	
+	.blk .icon {
+		margin-top:10px;
+		font-size:60px !important;
+		display:block;
+	}
+	
+	.blk2x .icon {
+		margin-top:150px;
+		display:block;
+	}
+}
+
+
+

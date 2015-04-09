@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Jobs APP :: iPed</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+<!-- bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.css" id='Bootstrap' />
+
+<!-- jQueryMobileCSS - original without styling -->
+<link rel="stylesheet" href="css/jquerymobile.css" />
+<link rel="stylesheet" href="css/home.css" />
+
+<!-- nativeDroid core CSS -->
+<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+<!-- nativeDroid: Light/Dark -->
+<link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+<!-- nativeDroid: Color Schemes -->
+<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+<link rel="stylesheet" href="css/style.css" id='Styles' />
+<script src="phonegap.js"></script>
+<script type="text/javascript" src="js/deviceCheck.js"></script>
+<script src="js/head.load.min.js"></script>
+<script src="js/jquery.js"></script>
+
+<script src="js/maintables.js"></script>
+<script src="js/main.js"></script>
+<script src="controler/monta_app_view.js"></script>
+
+<!-- CRIA TABELA DE LOGIN E VERIFICA SE USER ESTÃ� AUTORIADO NÃ€O Ã‰ NECESSARIO NAS INTERNAS -->
+<script src="js/phpjs/utf8_encode.js"></script>
+<script src="js/phpjs/md5.js"></script>
+
+<!-- jQuery / jQueryMobile Scripts -->
+</head>
+
+<body>
+<section id="pre-loader">
+  <div class="spinner"></div>
+  <div id="status" class="contador_load">Aguarde...</div>
+</section>
+<div data-role="page" id="login" data-theme='b'>
+  <div data-role="content">
+    <div data-nativedroid-plugin="homescreen" data-nativedroid-background="images/azul.jpg">
+      <div data-nativedroid-role='widget' 
+             data-nativedroid-widget-width='4'
+             data-nativedroid-widget-height='1' 
+             data-nativedroid-widget-offset-top='0' 
+             data-nativedroid-widget-offset-left='0'> <img src="images/logojobs.png" /> </div>
+      <div data-nativedroid-role='widget' 
+            
+             data-nativedroid-widget-width='4' 
+             data-nativedroid-widget-height='1' 
+             data-nativedroid-widget-offset-top='2' 
+             data-nativedroid-widget-offset-left='0'>
+        <div class="inset">
+          <form id="loginform" class="loginform">
+            <ul data-role="listview" data-inset="true">
+              <li>
+                <input type="text" name="login" id="login" value="" data-clear-btn="true" placeholder="Login">
+              </li>
+              <li>
+                <input type="password" name="senha" id="senha" value="" data-clear-btn="true" placeholder="Senha">
+              </li>
+              <li>
+                <button type="button" class="btn" data-theme="c" onClick="logar()">Trabalhar</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="home" data-theme='b' class="home">
+  <div data-role="content">
+    
+    <div>
+      <div>
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>
+                  <div class="pull-left">Jobs</div>
+                  <div id="dadosUsuario" class="pull-right">Aguarde..</div>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="contents container"> 
+          
+          
+          <a href="#catalogoGaleria" data-ajax="false" data-transition="slide">
+            <div class="block color-6" style="min-width:99.20%"><i class="icon icon-th"></i>
+              <div>Catalogo</div>
+            </div>
+            </a>
+            <div class="clearfix"></div>
+            <div class="blocks-container"> <a href="#promocoes" data-ajax="false" data-transition="slide">
+              <div class="block color-1"><i class="icon icon-tags"></i>
+                <div>Promo&ccedil;&otilde;es</div>
+              </div>
+              </a> <a href="#contatos" data-ajax="false" data-transition="slide">
+              <div class="block color-2"><i class="icon icon-phone"></i>
+                <div>Contatos</div>
+              </div>
+              </a> <a href="#cadastro" data-ajax="false" data-transition="slide">
+              <div class="block color-3"><i class="icon icon-file"></i>
+                <div>Cadastro</div>
+              </div>
+              </a> <a href="#relatorios" data-ajax="false" data-transition="slide">
+              <div class="block color-4"><i class="icon icon-bar-chart"></i>
+                <div>Relat&oacute;rios</div>
+              </div>
+              </a> <a href="#videos" data-ajax="false" data-transition="slide">
+              <div class="block color-6"><i class="icon icon-play"></i>
+                <div>V&iacute;deos</div>
+              </div>
+              </a> <a href="#lancamentos" data-ajax="false" data-transition="slide">
+              <div class="block color-5"><i class="icon icon-star"></i>
+                <div>Lan&ccedil;amentos</div>
+              </div>
+              </a> <a href="#recados" data-ajax="false" data-transition="slide">
+              <div class="block color-2"><i class="icon icon-comments"></i>
+                <div>Recados</div>
+              </div>
+              </a> <a href="#financeiro" data-ajax="false" data-transition="slide">
+              <div class="block color-3"><i class="icon icon-dollar"></i>
+                <div>Financeiro</div>
+              </div>
+              </a> <a href="#financeiro" data-ajax="false" data-transition="slide">
+              <div class="block color-7"><i class="icon icon-rss"></i>
+                <div>Infobras</div>
+              </div>
+              </a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          
+          <!-- container --> 
+          
+        </div>
+        
+        <!-- segunda linha --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pagina catalogo -->
+<div data-role="page" id="catalogo" data-theme='b'>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+    <h2>
+      <div class="pull-left">Buscar Catalogo</div>
+      <div class="pull-right"><a href="#" data-rel="back" id="btn-back"  data-role='button'  data-inline="true"  data-icon='chevron-left'></a>
+      <a href="#home"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-home"></i></a></div>
+    </h2>
+   </div>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelC" data-theme="b"> </div>
+  </div>
+  <div data-role="content">
+    <div class="inset">
+      <div class='message info'> <i class='icon-lightbulb'></i>
+        <p>Preencha os dados do formulario abaixo para buscar os produtos desejados.</p>
+      </div>
+      <!-- / message -->
+      
+      <div>
+        <form action="" id="formCatalogo" data-ajax="false" method="get">
+          <ul data-role="listview" data-inset="true">
+            <li data-role="fieldcontain">
+              <label for="fordem" class="select">Ordem</label>
+              <select name="select-choice-1" id="fordem" data-native-menu="true">
+                <option value="1">Alfabetica</option>
+                <option value="2">Fabricante</option>
+              </select>
+            </li>
+            <li data-role="fieldcontain">
+              <label for="flaboratorio" class="select">Laboratorio</label>
+              <select name="select-choice-1" id="flaboratorio" data-native-menu="true">
+                <option value="">Selecione</option>
+              </select>
+            </li>
+            <li data-role="fieldcontain">
+              <label for="fcategoria" class="select">Categoria</label>
+              <select name="fcategoria" id="fcategoria" data-native-menu="true">
+                <option value="">Selecione </option>
+              </select>
+            </li>
+            <li data-role="fieldcontain">
+              <label for="fdestaque">Lan&ccedil;amento:</label>
+              <select name="fdestaque" id="fdestaque" data-role="slider">
+                <option value="0">N&atilde;o</option>
+                <option value="1">Sim</option>
+              </select>
+            </li>
+            <li data-role="fieldcontain">
+              <label for="ftiporesultado" class="select">Tipo de Resultado</label>
+              <select name="ftiporesultado" id="ftiporesultado" data-native-menu="true">
+                <option value="catalogoGaleria">Galeria (imagens)</option>
+                <option value="catalogoBusca">Normal (1 em baixo do outro)</option>
+              </select>
+            </li>
+            <li>
+              <fieldset class="ui-grid-a">
+                <div class="ui-block-a">
+                  <button type="reset" data-theme="b">Cancelar</button>
+                </div>
+                <div class="ui-block-b">
+                  <button onclick="doBuscaCatalogo('#formCatalogo')" type="button" data-theme="b">Filtrar</button>
+                </div>
+              </fieldset>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <!-- /form --> 
+      
+    </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+
+<!-- / pagina catalogo --> 
+
+<!-- pagina catalogoBusca -->
+<div data-role="page" id="catalogoBusca" data-theme='b'>
+<div class="apanel">
+    <div data-role="panel" id="mypanelCB" data-theme="b"> </div>
+  </div>
+  
+  
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+    <h2>
+      <div class="pull-left">Catalogo Lista</div>
+      <div class="pull-right"><a href="#" data-rel="back" id="btn-back"  data-role='button'  data-inline="true"  data-icon='chevron-left'></a>
+      
+      <a href="#catalogo"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-search"></i></a>
+      <a href="#home"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-home"></i></a></div>
+    </h2>
+   </div>
+  
+  
+  
+    
+    
+    
+    </div>
+  <div data-role="content">
+    <div class="inset">
+      <div id="my-list2">
+        <ul data-role="listview" id="litens" data-inset="false"  data-icon="false" data-divider-theme="b" data-filter-theme="b" data-filter="true"  data-filter-placeholder="Buscar por nome">
+        </ul>
+      </div>
+    </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+
+<!-- / pagina catalogoBusca --> 
+
+<!-- pagina catalogoGaleria -->
+<div data-role="page" id="catalogoGaleria" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelCG" data-theme="b"> </div>
+  </div>
+  
+  
+  
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+    <h2>
+      <div class="pull-left">Catalogo</div>
+      <div class="pull-right"><a href="#" data-rel="back" id="btn-back"  data-role='button'  data-inline="true"  data-icon='chevron-left'></a>
+      
+      <a href="#catalogo"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-search"></i></a>
+      <a href="#home"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-home"></i></a></div>
+    </h2>
+   </div>
+  
+  <div data-role="content">
+    <div class="inset">
+      <div class="formBusca">
+        <form action="" id="formCatalogoGaleria" data-ajax="false" method="get">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="25%"><select name="select-choice-1" id="fordem" data-native-menu="true">
+                  <option value="">Ordem</option>
+                  <option value="1">Alfabetica</option>
+                  <option value="2">Fabricante</option>
+                </select></td>
+              <td  width="25%"><select name="select-choice-1" id="flaboratorio" data-native-menu="true">
+                  <option value="">Laborat&oacute;rio</option>
+                </select></td>
+              <td><select name="fcategoria" id="fcategoria" data-native-menu="true">
+                  <option value="">Categoria </option>
+                </select></td>
+              <td><input type="hidden" name="ftiporesultado" id="ftiporesultado" value="catalogoGaleria" />
+                <button onclick="doBuscaCatalogo('#formCatalogoGaleria')" type="button" data-theme="b">Filtrar</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="gallery" id="galeriaC"> </div>
+    </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+
+<!-- / pagina catalogoGaleria --> 
+
+<!-- pagina catalogoItem -->
+<div data-role="page" id="catalogoItem" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelCI" data-theme="b"> </div>
+  </div>
+  
+  
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+    <h2>
+      <div class="pull-left">Detalhes do Produto</div>
+      <div class="pull-right"><a href="#" data-rel="back" id="btn-back"  data-role='button'  data-inline="true"  data-icon='chevron-left'></a>
+      
+      <a href="#catalogo"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-search"></i></a>
+      <a href="#home"  class="btn btn-inverse"  data-inline='true'><i class="icon icon-home"></i></a></div>
+    </h2>
+   </div>
+  
+  
+  
+  
+  <div data-role="content">
+    <div class="inset">
+      <div id="verticalWrapper">
+        <div id="verticalScroller">
+          <h2 id="nome"></h2>
+          <div id="imagem" align="center"></div>
+          <div class="dados">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" data-role="table" id='table-column-toggle' data-mode='columntoggle' class='ui-responsive table-stroke'>
+              <tr>
+                <td width="30%">C&oacute;digo</td>
+                <td id="codigo">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="30%">Marca</td>
+                <td id="marca">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="30%">Categoria</td>
+                <td id="categoriaP">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Cód. de Barras</td>
+                <td id="codBarras">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Lote</td>
+                <td id="vencimento">&nbsp;</td>
+              </tr>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+
+<!-- / pagina catalogoItem --> 
+
+<!-- pagina promocoes -->
+<div data-role="page" id="promocoes" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelPromo" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelPromo" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Promo&ccedil;&otilde;es</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+
+<!-- / pagina promocoes --> 
+
+<!-- pagina contatos -->
+<div data-role="page" id="contatos" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelCo" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelCo" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Contatos</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+
+<!-- / pagina contatos --> 
+
+<!-- pagina cadastro -->
+<div data-role="page" id="cadastro" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelCa" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelCa" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Cadastro</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina cadastro --> 
+
+<!-- pagina relatorios -->
+<div data-role="page" id="relatorios" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelRe" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelRe" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Relat&oacute;rios</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina relatorios --> 
+
+<!-- pagina videos -->
+<div data-role="page" id="videos" data-theme='b'>
+  <div class="apanel">
+    <div data-role="panel" id="mypanelVi" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelVi" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>V&iacute;deos</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina videos --> 
+
+<!-- pagina lancamentos -->
+<div data-role="page" id="lancamentos" data-theme='b'>
+  <div  class="apanel">
+    <div data-role="panel" id="mypanelLa" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelLa" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Lan&ccedil;amentos</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina lancamentos --> 
+
+<!-- pagina recados -->
+<div data-role="page" id="recados" data-theme='b' data-url="recados">
+  <div class="apanel">
+    <div data-role="panel" id="mypanelRec" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelRec" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Recados</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina recados --> 
+
+<!-- pagina financeiro -->
+<div data-role="page" id="financeiro" data-theme='b' data-url="financeiro">
+  <div class="apanel">
+    <div data-role="panel" id="mypanelFi" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelFi" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Financeiro</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina financeiro --> 
+
+<!-- pagina infobras -->
+<div data-role="page" id="infobras" data-theme='b' data-url="infobras">
+  <div class="apanel">
+    <div data-role="panel" id="mypanelIn" data-theme="b"> </div>
+  </div>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'> <a href="#mypanelIn" data-role='button' data-icon='tasks' data-iconpos='left' data-inline='true'>&nbsp;</a>
+    <h1>Infobras</h1>
+    <a href="#" data-rel="back" id="btn-back"   data-inline="true" class="btn btn-info"><i class="icon-chevron-left"></i> </a> </div>
+  <div data-role="content">
+    <div class="inset"> Em breve </div>
+    <!--/ inset --> 
+    
+  </div>
+  <!--/ content --> 
+</div>
+<!-- / pagina infobras --> 
+
+<script src="js/nativedroid.script.js"></script> 
+
+
+<script type="text/javascript">
+// JavaScript Document
+$(document).ready(function(){					
+	(function(){
+	//START FUNCTIONS
+		//CLEAR PRELOADER --------------------------------//	
+		$(window).load(function() {
+			$("#pre-loader").fadeOut(400);	
+			getMainTables();
+		});
+	})();
+	
+});
+
+causeRepaintsOn = $("div.block, .text, h1");
+
+jQuery(window).resize(function() {
+	causeRepaintsOn.css("z-index", 1);
+});
+</script>
+</body>
+</html>

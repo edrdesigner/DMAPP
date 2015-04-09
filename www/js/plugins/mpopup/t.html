@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>Teste</title>
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup.css"> 
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="../../jquery-1.11.2.min.js"></script> 
+
+<!-- Magnific Popup core JS file -->
+<script src="jquery.magnific-popup.js"></script>
+</head>
+
+
+<body>
+  
+<a href="javascript:openProduct('i1')" id="i1"   data-title="teste" data-text="Um texto aqui" data-image="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Marabou_stork%2C_Leptoptilos_crumeniferus_edit1.jpg/603px-Marabou_stork%2C_Leptoptilos_crumeniferus_edit1.jpg" data-text="00552244" class="open-popup-link">Show inline popup</a>
+
+<br> 
+<a href="javascript:openProduct('i2')" id="i2"   data-title="teste 2" data-text="Um texto aqui 2" data-image="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" data-text="00552244" class="open-popup-link">Show inline popup</a>
+
+<div id="test-popup" class="white-popup mfp-hide" >
+  Popup content
+</div>
+
+
+<script type="text/javascript">
+  
+$('.open-popup-link2').magnificPopup({
+
+
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
+
+$('.open-popup-link3').magnificPopup({
+
+ items: {
+      src: '<div class="white-popup">Dynamically created popup</div>',
+      type: 'inline'
+  }
+
+});
+
+
+
+$('.open-popup-link2').magnificPopup({
+
+ items: {
+      src: '<div class="ajax-text-and-image white-popup-block"><div class="ajcol"><img src="'+$(this).attr('data-image')+'"/></div><div class="ajcol" style="line-height: 1.231;"><div style="padding: 1em"><h1>'+$(this).attr('data-title')+'</h1><p>'+$(this).attr('data-text')+'</p></div></div><div style="clear:both; line-height: 0;"></div></div>',
+      type: 'inline'
+  }
+
+});
+
+
+function openProduct(evt)
+{
+
+
+  // Open directly via API
+  $.magnificPopup.open({
+    items: {
+     src: '<div class="ajax-text-and-image white-popup"><div class="ajcol"><img src="'+$('#'+evt).attr('data-image')+'"/></div><div class="ajcol" style="line-height: 1.231;"><div style="padding: 1em"><h1>'+$('#'+evt).attr('data-title')+'</h1><p>'+$('#'+evt).attr('data-text')+'</p></div></div><div style="clear:both; line-height: 0;"></div></div>', // can be a HTML string, jQuery object, or CSS selector
+      type: 'inline'
+    }
+  });
+
+}
+
+
+
+
+
+
+</script>
+
+</body>
+
+
+</html>

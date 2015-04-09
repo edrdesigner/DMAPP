@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+/*
+ * CSS viewport units with jQuery
+ * http://www.w3.org/TR/css3-values/#viewport-relative-lengths
+ */
+/*
+ * CSS viewport units with jQuery
+ * http://www.w3.org/TR/css3-values/#viewport-relative-lengths
+ */
+;(function( $, window ){
+ 
+  var $win = $(window)
+    , _css = $.fn.css;
+ 
+  function viewportToPixel( val ) {
+    var percent = val.match(/[\d.]+/)[0] / 100,
+        unit = val.match(/[vwh]+/)[0];
+    return (unit == 'vh' ? $win.height() : $win.width()) * percent +'px';
+  }
+ 
+  function parseProps( props ) {
+    var p, prop;
+    for ( p in props ) {
+      prop = props[ p ];
+      if ( /[vwh]$/.test( prop ) ) {
+        props[ p ] = viewportToPixel( prop );
+      }
+    }
+    return props;
+  }
+ 
+  $.fn.css = function( props ) {
+    var self = this,
+        update = function() {
+          return _css.call( self, parseProps( $.extend( {}, props ) ) );
+        };
+    $win.resize( update ).resize();
+    return update();
+  };
+ 
+}( jQuery, window ));
+</script>
+<style type="text/css" media="all">
+body { margin: 0; }
+div {
+  background: #fa7098;
+  text-align:center;
+  
+}
+</style>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <div>hello</div>
+  <div>hello 2</div>
+  <div>hello 2</div>
+  <div>hello 2</div>
+  <script type="text/javascript" charset="utf-8">
+  $('div').css({
+    height: '15vh',
+    width: '50vw',
+    marginTop: '1vh',
+    marginLeft: '25vw',
+    fontSize: '5vh',
+	padding: '2vw'
+  });
+  </script>
+</body>
+</html>

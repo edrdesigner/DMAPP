@@ -1,0 +1,1202 @@
+[class*="fa-"] {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-image: url(sprites.svg);
+	background-repeat: no-repeat;
+}
+.fa-spinner {
+	background-position: 0 0;
+	width: 64px;
+}
+.fa-glass {
+	background-position: -94px 0;
+	width: 64px;
+}
+.fa-music {
+	background-position: -188px 0;
+	width: 60px;
+}
+.fa-search {
+	background-position: -278px 0;
+	width: 64px;
+}
+.fa-envelope {
+	background-position: -372px 0;
+	width: 64px;
+}
+.fa-heart {
+	background-position: -466px 0;
+	width: 64px;
+}
+.fa-star {
+	background-position: -560px 0;
+	width: 64px;
+}
+.fa-star-empty {
+	background-position: -654px 0;
+	width: 60px;
+}
+.fa-user {
+	background-position: -744px 0;
+	width: 64px;
+}
+.fa-film {
+	background-position: -838px 0;
+	width: 64px;
+}
+.fa-th-large {
+	background-position: -932px 0;
+	width: 64px;
+}
+.fa-th {
+	background-position: -1026px 0;
+	width: 64px;
+}
+.fa-th-list {
+	background-position: -1120px 0;
+	width: 64px;
+}
+.fa-ok {
+	background-position: -1214px 0;
+	width: 64px;
+}
+.fa-remove {
+	background-position: -1308px 0;
+	width: 64px;
+}
+.fa-zoom-in {
+	background-position: -1402px 0;
+	width: 68px;
+}
+.fa-zoom-out {
+	background-position: 0 -90px;
+}
+.fa-off {
+	background-position: -94px -90px;
+}
+.fa-signal {
+	background-position: -188px -90px;
+}
+.fa-cog {
+	background-position: -278px -90px;
+}
+.fa-trash {
+	background-position: -372px -90px;
+}
+.fa-home {
+	background-position: -466px -90px;
+}
+.fa-file {
+	background-position: -560px -90px;
+}
+.fa-time {
+	background-position: -654px -90px;
+}
+.fa-road {
+	background-position: -744px -90px;
+}
+.fa-download-alt {
+	background-position: -838px -90px;
+}
+.fa-download {
+	background-position: -932px -90px;
+}
+.fa-upload {
+	background-position: -1026px -90px;
+}
+.fa-inbox {
+	background-position: -1120px -90px;
+}
+.fa-play-circle {
+	background-position: -1214px -90px;
+}
+.fa-repeat {
+	background-position: -1308px -90px;
+}
+.fa-refresh {
+	background-position: -1402px -90px;
+}
+.fa-list-alt {
+	background-position: 0 -180px;
+}
+.fa-lock {
+	background-position: -94px -180px;
+}
+.fa-flag {
+	background-position: -188px -180px;
+}
+.fa-headphones {
+	background-position: -278px -180px;
+}
+.fa-volume-off {
+	background-position: -372px -180px;
+}
+.fa-volume-down {
+	background-position: -466px -180px;
+}
+.fa-volume-up {
+	background-position: -560px -180px;
+}
+.fa-qrcode {
+	background-position: -654px -180px;
+}
+.fa-barcode {
+	background-position: -744px -180px;
+}
+.fa-tag {
+	background-position: -838px -180px;
+}
+.fa-tags {
+	background-position: -932px -180px;
+}
+.fa-book {
+	background-position: -1026px -180px;
+}
+.fa-bookmark {
+	background-position: -1120px -180px;
+}
+.fa-print {
+	background-position: -1214px -180px;
+}
+.fa-camera {
+	background-position: -1308px -180px;
+}
+.fa-font {
+	background-position: -1402px -180px;
+}
+.fa-bold {
+	background-position: 0 -270px;
+}
+.fa-italic {
+	background-position: -94px -270px;
+}
+.fa-text-height {
+	background-position: -188px -270px;
+}
+.fa-text-width {
+	background-position: -278px -270px;
+}
+.fa-align-left {
+	background-position: -372px -270px;
+}
+.fa-align-center {
+	background-position: -466px -270px;
+}
+.fa-align-right {
+	background-position: -560px -270px;
+}
+.fa-align-justify {
+	background-position: -654px -270px;
+}
+.fa-list {
+	background-position: -744px -270px;
+}
+.fa-indent-left {
+	background-position: -838px -270px;
+}
+.fa-indent-right {
+	background-position: -932px -270px;
+}
+.fa-facetime-video {
+	background-position: -1026px -270px;
+}
+.fa-picture {
+	background-position: -1120px -270px;
+}
+.fa-pencil {
+	background-position: -1214px -270px;
+}
+.fa-map-marker {
+	background-position: -1308px -270px;
+}
+.fa-adjust {
+	background-position: -1402px -270px;
+}
+.fa-tint {
+	background-position: 0 -360px;
+}
+.fa-edit {
+	background-position: -94px -360px;
+}
+.fa-share {
+	background-position: -188px -360px;
+}
+.fa-check {
+	background-position: -278px -360px;
+}
+.fa-move {
+	background-position: -372px -360px;
+}
+.fa-step-backward {
+	background-position: -466px -360px;
+}
+.fa-fast-backward {
+	background-position: -560px -360px;
+}
+.fa-backward {
+	background-position: -654px -360px;
+}
+.fa-play {
+	background-position: -744px -360px;
+}
+.fa-pause {
+	background-position: -838px -360px;
+}
+.fa-stop {
+	background-position: -932px -360px;
+}
+.fa-forward {
+	background-position: -1026px -360px;
+}
+.fa-fast-forward {
+	background-position: -1120px -360px;
+}
+.fa-step-forward {
+	background-position: -1214px -360px;
+}
+.fa-eject {
+	background-position: -1308px -360px;
+}
+.fa-chevron-left {
+	background-position: -1402px -360px;
+}
+.fa-chevron-right {
+	background-position: 0 -450px;
+}
+.fa-plus-sign {
+	background-position: -94px -450px;
+}
+.fa-minus-sign {
+	background-position: -188px -450px;
+}
+.fa-remove-sign {
+	background-position: -278px -450px;
+}
+.fa-ok-sign {
+	background-position: -372px -450px;
+}
+.fa-question-sign {
+	background-position: -466px -450px;
+}
+.fa-info-sign {
+	background-position: -560px -450px;
+}
+.fa-screenshot {
+	background-position: -654px -450px;
+}
+.fa-remove-circle {
+	background-position: -744px -450px;
+}
+.fa-ok-circle {
+	background-position: -838px -450px;
+}
+.fa-ban-circle {
+	background-position: -932px -450px;
+}
+.fa-arrow-left {
+	background-position: -1026px -450px;
+}
+.fa-arrow-right {
+	background-position: -1120px -450px;
+}
+.fa-arrow-up {
+	background-position: -1214px -450px;
+}
+.fa-arrow-down {
+	background-position: -1308px -450px;
+}
+.fa-share-alt {
+	background-position: -1402px -450px;
+}
+.fa-resize-full {
+	background-position: 0 -540px;
+}
+.fa-resize-small {
+	background-position: -94px -540px;
+}
+.fa-plus {
+	background-position: -188px -540px;
+}
+.fa-minus {
+	background-position: -278px -540px;
+}
+.fa-asterisk {
+	background-position: -372px -540px;
+}
+.fa-exclamation-sign {
+	background-position: -466px -540px;
+}
+.fa-gift {
+	background-position: -560px -540px;
+}
+.fa-leaf {
+	background-position: -654px -540px;
+}
+.fa-fire {
+	background-position: -744px -540px;
+}
+.fa-eye-open {
+	background-position: -838px -540px;
+}
+.fa-eye-close {
+	background-position: -932px -540px;
+}
+.fa-warning-sign {
+	background-position: -1026px -540px;
+}
+.fa-plane {
+	background-position: -1120px -540px;
+}
+.fa-calendar {
+	background-position: -1214px -540px;
+}
+.fa-random {
+	background-position: -1308px -540px;
+}
+.fa-comment {
+	background-position: -1402px -540px;
+}
+.fa-magnet {
+	background-position: 0 -630px;
+}
+.fa-chevron-up {
+	background-position: -94px -630px;
+}
+.fa-chevron-down {
+	background-position: -188px -630px;
+}
+.fa-retweet {
+	background-position: -278px -630px;
+}
+.fa-shopping-cart {
+	background-position: -372px -630px;
+}
+.fa-folder-close {
+	background-position: -466px -630px;
+}
+.fa-folder-open {
+	background-position: -560px -630px;
+}
+.fa-resize-vertical {
+	background-position: -654px -630px;
+}
+.fa-resize-horizontal {
+	background-position: -744px -630px;
+}
+.fa-bar-chart {
+	background-position: -838px -630px;
+}
+.fa-twitter-sign {
+	background-position: -932px -630px;
+}
+.fa-facebook-sign {
+	background-position: -1026px -630px;
+}
+.fa-camera-retro {
+	background-position: -1120px -630px;
+}
+.fa-key {
+	background-position: -1214px -630px;
+}
+.fa-cogs {
+	background-position: -1308px -630px;
+}
+.fa-comments {
+	background-position: -1402px -630px;
+}
+.fa-thumbs-up {
+	background-position: 0 -720px;
+}
+.fa-thumbs-down {
+	background-position: -94px -720px;
+}
+.fa-star-half {
+	background-position: -188px -720px;
+}
+.fa-heart-empty {
+	background-position: -278px -720px;
+}
+.fa-signout {
+	background-position: -372px -720px;
+}
+.fa-linkedin-sign {
+	background-position: -466px -720px;
+}
+.fa-pushpin {
+	background-position: -560px -720px;
+}
+.fa-external-link {
+	background-position: -654px -720px;
+}
+.fa-signin {
+	background-position: -744px -720px;
+}
+.fa-trophy {
+	background-position: -838px -720px;
+}
+.fa-github-sign {
+	background-position: -932px -720px;
+}
+.fa-upload-alt {
+	background-position: -1026px -720px;
+}
+.fa-lemon {
+	background-position: -1120px -720px;
+}
+.fa-phone {
+	background-position: -1214px -720px;
+}
+.fa-check-empty {
+	background-position: -1308px -720px;
+}
+.fa-bookmark-empty {
+	background-position: -1402px -720px;
+}
+.fa-phone-sign {
+	background-position: 0 -810px;
+}
+.fa-twitter {
+	background-position: -94px -810px;
+}
+.fa-facebook {
+	background-position: -188px -810px;
+}
+.fa-github {
+	background-position: -278px -810px;
+}
+.fa-unlock {
+	background-position: -372px -810px;
+}
+.fa-credit {
+	background-position: -466px -810px;
+}
+.fa-rss {
+	background-position: -560px -810px;
+}
+.fa-hdd {
+	background-position: -654px -810px;
+}
+.fa-bullhorn {
+	background-position: -744px -810px;
+}
+.fa-bell {
+	background-position: -838px -810px;
+}
+.fa-certificate {
+	background-position: -932px -810px;
+}
+.fa-hand-right {
+	background-position: -1026px -810px;
+}
+.fa-hand-left {
+	background-position: -1120px -810px;
+}
+.fa-hand-up {
+	background-position: -1214px -810px;
+}
+.fa-hand-down {
+	background-position: -1308px -810px;
+}
+.fa-circle-arrow-left {
+	background-position: -1402px -810px;
+}
+.fa-circle-arrow-right {
+	background-position: 0 -900px;
+}
+.fa-circle-arrow-up {
+	background-position: -94px -900px;
+}
+.fa-circle-arrow-down {
+	background-position: -188px -900px;
+}
+.fa-globe {
+	background-position: -278px -900px;
+}
+.fa-wrench {
+	background-position: -372px -900px;
+}
+.fa-tasks {
+	background-position: -466px -900px;
+}
+.fa-filter {
+	background-position: -560px -900px;
+}
+.fa-briefcase {
+	background-position: -654px -900px;
+}
+.fa-fullscreen {
+	background-position: -744px -900px;
+}
+.fa-group {
+	background-position: -838px -900px;
+}
+.fa-link {
+	background-position: -932px -900px;
+}
+.fa-cloud {
+	background-position: -1026px -900px;
+}
+.fa-beaker {
+	background-position: -1120px -900px;
+}
+.fa-cut {
+	background-position: -1214px -900px;
+}
+.fa-copy {
+	background-position: -1308px -900px;
+}
+.fa-paper-clip {
+	background-position: -1402px -900px;
+}
+.fa-save {
+	background-position: 0 -990px;
+}
+.fa-sign-blank {
+	background-position: -94px -990px;
+}
+.fa-reorder {
+	background-position: -188px -990px;
+}
+.fa-list-ul {
+	background-position: -278px -990px;
+}
+.fa-list-ol {
+	background-position: -372px -990px;
+}
+.fa-strikethrough {
+	background-position: -466px -990px;
+}
+.fa-underline {
+	background-position: -560px -990px;
+}
+.fa-table {
+	background-position: -654px -990px;
+}
+.fa-magic {
+	background-position: -744px -990px;
+}
+.fa-truck {
+	background-position: -838px -990px;
+}
+.fa-pinterest {
+	background-position: -932px -990px;
+}
+.fa-pinterest-sign {
+	background-position: -1026px -990px;
+}
+.fa-google-plus-sign {
+	background-position: -1120px -990px;
+}
+.fa-google-plus {
+	background-position: -1214px -990px;
+}
+.fa-money {
+	background-position: -1308px -990px;
+}
+.fa-caret-down {
+	background-position: -1402px -990px;
+}
+.fa-caret-up {
+	background-position: 0 -1080px;
+}
+.fa-caret-left {
+	background-position: -94px -1080px;
+}
+.fa-caret-right {
+	background-position: -188px -1080px;
+}
+.fa-columns {
+	background-position: -278px -1080px;
+}
+.fa-sort {
+	background-position: -372px -1080px;
+}
+.fa-sort-down {
+	background-position: -466px -1080px;
+}
+.fa-sort-up {
+	background-position: -560px -1080px;
+}
+.fa-envelope-alt {
+	background-position: -654px -1080px;
+}
+.fa-linkedin {
+	background-position: -744px -1080px;
+}
+.fa-undo {
+	background-position: -838px -1080px;
+}
+.fa-legal {
+	background-position: -932px -1080px;
+}
+.fa-dashboard {
+	background-position: -1026px -1080px;
+}
+.fa-comment-alt {
+	background-position: -1120px -1080px;
+}
+.fa-comments-alt {
+	background-position: -1214px -1080px;
+}
+.fa-bolt {
+	background-position: -1308px -1080px;
+}
+.fa-sitemap {
+	background-position: -1402px -1080px;
+}
+.fa-umbrella {
+	background-position: 0 -1170px;
+}
+.fa-paste {
+	background-position: -94px -1170px;
+}
+.fa-lightbulb {
+	background-position: -188px -1170px;
+}
+.fa-exchange {
+	background-position: -278px -1170px;
+}
+.fa-cloud-download {
+	background-position: -372px -1170px;
+}
+.fa-cloud-upload {
+	background-position: -466px -1170px;
+}
+.fa-user-md {
+	background-position: -560px -1170px;
+}
+.fa-stethoscope {
+	background-position: -654px -1170px;
+}
+.fa-suitcase {
+	background-position: -744px -1170px;
+}
+.fa-bell-alt {
+	background-position: -838px -1170px;
+}
+.fa-coffee {
+	background-position: -932px -1170px;
+}
+.fa-food {
+	background-position: -1026px -1170px;
+}
+.fa-file-alt {
+	background-position: -1120px -1170px;
+}
+.fa-building {
+	background-position: -1214px -1170px;
+}
+.fa-hospital {
+	background-position: -1308px -1170px;
+}
+.fa-ambulance {
+	background-position: -1402px -1170px;
+}
+.fa-medkit {
+	background-position: 0 -1260px;
+}
+.fa-fighter-jet {
+	background-position: -94px -1260px;
+}
+.fa-beer {
+	background-position: -188px -1260px;
+}
+.fa-h-sign {
+	background-position: -278px -1260px;
+}
+.fa-plus-sign2 {
+	background-position: -372px -1260px;
+}
+.fa-double-angle-left {
+	background-position: -466px -1260px;
+}
+.fa-double-angle-right {
+	background-position: -560px -1260px;
+}
+.fa-double-angle-up {
+	background-position: -654px -1260px;
+}
+.fa-double-angle-down {
+	background-position: -744px -1260px;
+}
+.fa-angle-left {
+	background-position: -838px -1260px;
+}
+.fa-angle-right {
+	background-position: -932px -1260px;
+}
+.fa-angle-up {
+	background-position: -1026px -1260px;
+}
+.fa-angle-down {
+	background-position: -1120px -1260px;
+}
+.fa-desktop {
+	background-position: -1214px -1260px;
+}
+.fa-laptop {
+	background-position: -1308px -1260px;
+}
+.fa-tablet {
+	background-position: -1402px -1260px;
+}
+.fa-mobile {
+	background-position: 0 -1350px;
+}
+.fa-circle-blank {
+	background-position: -94px -1350px;
+}
+.fa-quote-left {
+	background-position: -188px -1350px;
+}
+.fa-quote-right {
+	background-position: -278px -1350px;
+}
+.fa-spinner2 {
+	background-position: -372px -1350px;
+}
+.fa-circle {
+	background-position: -466px -1350px;
+}
+.fa-reply {
+	background-position: -560px -1350px;
+}
+.fa-github-alt {
+	background-position: -654px -1350px;
+}
+.fa-folder-close-alt {
+	background-position: -744px -1350px;
+}
+.fa-folder-open-alt {
+	background-position: -838px -1350px;
+}
+.fa-expand-alt {
+	background-position: -932px -1350px;
+}
+.fa-collapse-alt {
+	background-position: -1026px -1350px;
+}
+.fa-smile {
+	background-position: -1120px -1350px;
+}
+.fa-frown {
+	background-position: -1214px -1350px;
+}
+.fa-meh {
+	background-position: -1308px -1350px;
+}
+.fa-gamepad {
+	background-position: -1402px -1350px;
+}
+.fa-keyboard {
+	background-position: 0 -1440px;
+}
+.fa-flag-alt {
+	background-position: -94px -1440px;
+}
+.fa-flag-checkered {
+	background-position: -188px -1440px;
+}
+.fa-terminal {
+	background-position: -278px -1440px;
+}
+.fa-code {
+	background-position: -372px -1440px;
+}
+.fa-reply-all {
+	background-position: -466px -1440px;
+}
+.fa-star-half-full {
+	background-position: -560px -1440px;
+}
+.fa-location-arrow {
+	background-position: -654px -1440px;
+}
+.fa-crop {
+	background-position: -744px -1440px;
+}
+.fa-code-fork {
+	background-position: -838px -1440px;
+}
+.fa-unlink {
+	background-position: -932px -1440px;
+}
+.fa-question {
+	background-position: -1026px -1440px;
+}
+.fa-info {
+	background-position: -1120px -1440px;
+}
+.fa-exclamation {
+	background-position: -1214px -1440px;
+}
+.fa-superscript {
+	background-position: -1308px -1440px;
+}
+.fa-subscript {
+	background-position: -1402px -1440px;
+}
+.fa-eraser {
+	background-position: 0 -1530px;
+}
+.fa-puzzle {
+	background-position: -94px -1530px;
+}
+.fa-microphone {
+	background-position: -188px -1530px;
+}
+.fa-microphone-off {
+	background-position: -278px -1530px;
+}
+.fa-shield {
+	background-position: -372px -1530px;
+}
+.fa-calendar-empty {
+	background-position: -466px -1530px;
+}
+.fa-fire-extinguisher {
+	background-position: -560px -1530px;
+}
+.fa-rocket {
+	background-position: -654px -1530px;
+}
+.fa-maxcdn {
+	background-position: -744px -1530px;
+}
+.fa-chevron-sign-left {
+	background-position: -838px -1530px;
+}
+.fa-chevron-sign-right {
+	background-position: -932px -1530px;
+}
+.fa-chevron-sign-up {
+	background-position: -1026px -1530px;
+}
+.fa-chevron-sign-down {
+	background-position: -1120px -1530px;
+}
+.fa-html5 {
+	background-position: -1214px -1530px;
+}
+.fa-css3 {
+	background-position: -1308px -1530px;
+}
+.fa-anchor {
+	background-position: -1402px -1530px;
+}
+.fa-unlock-alt {
+	background-position: 0 -1620px;
+}
+.fa-bullseye {
+	background-position: -94px -1620px;
+}
+.fa-ellipsis-horizontal {
+	background-position: -188px -1620px;
+}
+.fa-ellipsis-vertical {
+	background-position: -278px -1620px;
+}
+.fa-rss-sign {
+	background-position: -372px -1620px;
+}
+.fa-play-sign {
+	background-position: -466px -1620px;
+}
+.fa-ticket {
+	background-position: -560px -1620px;
+}
+.fa-minus-sign-alt {
+	background-position: -654px -1620px;
+}
+.fa-check-minus {
+	background-position: -744px -1620px;
+}
+.fa-level-up {
+	background-position: -838px -1620px;
+}
+.fa-level-down {
+	background-position: -932px -1620px;
+}
+.fa-check-sign {
+	background-position: -1026px -1620px;
+}
+.fa-edit-sign {
+	background-position: -1120px -1620px;
+}
+.fa-external-link-sign {
+	background-position: -1214px -1620px;
+}
+.fa-share-sign {
+	background-position: -1308px -1620px;
+}
+.fa-compass {
+	background-position: -1402px -1620px;
+}
+.fa-collapse {
+	background-position: 0 -1710px;
+}
+.fa-collapse-top {
+	background-position: -94px -1710px;
+}
+.fa-expand {
+	background-position: -188px -1710px;
+}
+.fa-euro {
+	background-position: -278px -1710px;
+}
+.fa-gbp {
+	background-position: -372px -1710px;
+}
+.fa-dollar {
+	background-position: -466px -1710px;
+}
+.fa-rupee {
+	background-position: -560px -1710px;
+}
+.fa-yen {
+	background-position: -654px -1710px;
+}
+.fa-renminbi {
+	background-position: -744px -1710px;
+}
+.fa-won {
+	background-position: -838px -1710px;
+}
+.fa-bitcoin {
+	background-position: -932px -1710px;
+}
+.fa-file2 {
+	background-position: -1026px -1710px;
+}
+.fa-file-text {
+	background-position: -1120px -1710px;
+}
+.fa-sort-by-alphabet {
+	background-position: -1214px -1710px;
+}
+.fa-sort-by-alphabet-alt {
+	background-position: -1308px -1710px;
+}
+.fa-sort-by-attributes {
+	background-position: -1402px -1710px;
+}
+.fa-sort-by-attributes-alt {
+	background-position: 0 -1800px;
+}
+.fa-sort-by-order {
+	background-position: -94px -1800px;
+}
+.fa-sort-by-order-alt {
+	background-position: -188px -1800px;
+}
+.fa-thumbs-up2 {
+	background-position: -278px -1800px;
+}
+.fa-thumbs-down2 {
+	background-position: -372px -1800px;
+}
+.fa-youtube-sign {
+	background-position: -466px -1800px;
+}
+.fa-youtube {
+	background-position: -560px -1800px;
+}
+.fa-xing {
+	background-position: -654px -1800px;
+}
+.fa-xing-sign {
+	background-position: -744px -1800px;
+}
+.fa-youtube-play {
+	background-position: -838px -1800px;
+}
+.fa-dropbox {
+	background-position: -932px -1800px;
+}
+.fa-stackexchange {
+	background-position: -1026px -1800px;
+}
+.fa-instagram {
+	background-position: -1120px -1800px;
+}
+.fa-flickr {
+	background-position: -1214px -1800px;
+}
+.fa-adn {
+	background-position: -1308px -1800px;
+}
+.fa-bitbucket {
+	background-position: -1402px -1800px;
+}
+.fa-bitbucket-sign {
+	background-position: 0 -1890px;
+}
+.fa-tumblr {
+	background-position: -94px -1890px;
+}
+.fa-tumblr-sign {
+	background-position: -188px -1890px;
+}
+.fa-long-arrow-down {
+	background-position: -278px -1890px;
+}
+.fa-long-arrow-up {
+	background-position: -372px -1890px;
+}
+.fa-long-arrow-left {
+	background-position: -466px -1890px;
+}
+.fa-long-arrow-right {
+	background-position: -560px -1890px;
+}
+.fa-apple {
+	background-position: -654px -1890px;
+}
+.fa-windows {
+	background-position: -744px -1890px;
+}
+.fa-android {
+	background-position: -838px -1890px;
+}
+.fa-linux {
+	background-position: -932px -1890px;
+}
+.fa-dribbble {
+	background-position: -1026px -1890px;
+}
+.fa-skype {
+	background-position: -1120px -1890px;
+}
+.fa-foursquare {
+	background-position: -1214px -1890px;
+}
+.fa-trello {
+	background-position: -1308px -1890px;
+}
+.fa-female {
+	background-position: -1402px -1890px;
+}
+.fa-male {
+	background-position: 0 -1980px;
+}
+.fa-gittip {
+	background-position: -94px -1980px;
+}
+.fa-sun {
+	background-position: -188px -1980px;
+}
+.fa-moon {
+	background-position: -278px -1980px;
+}
+.fa-archive {
+	background-position: -372px -1980px;
+}
+.fa-bug {
+	background-position: -466px -1980px;
+}
+.fa-vk {
+	background-position: -560px -1980px;
+}
+.fa-weibo {
+	background-position: -654px -1980px;
+}
+.fa-renren {
+	background-position: -744px -1980px;
+}
+.fa-play2 {
+	background-position: -838px -1980px;
+}
+.fa-bars {
+	background-position: -932px -1980px;
+}
+.fa-table2 {
+	background-position: -1026px -1980px;
+}
+.fa-feed {
+	background-position: -1120px -1980px;
+}
+.fa-file-powerpoint {
+	background-position: -1214px -1980px;
+}
+.fa-heart2 {
+	background-position: -1308px -1980px;
+}
+.fa-bubbles {
+	background-position: -1402px -1980px;
+}
+.fa-spinner3 {
+	background-position: 0 -2070px;
+}
+.fa-spinner4 {
+	background-position: -94px -2070px;
+}
+.fa-pie {
+	background-position: -188px -2070px;
+}
+.fa-stats {
+	background-position: -278px -2070px;
+}
+.fa-bars2 {
+	background-position: -372px -2070px;
+}
+.fa-close {
+	background-position: -466px -2070px;
+}
+.fa-checkmark {
+	background-position: -560px -2070px;
+}
+.fa-checkmark2 {
+	background-position: -654px -2070px;
+}
+.fa-share2 {
+	background-position: -744px -2070px;
+}
+.fa-arrow-right2 {
+	background-position: -838px -2070px;
+}
+.fa-arrow-left2 {
+	background-position: -932px -2070px;
+}
+.fa-arrow-down2 {
+	background-position: -1026px -2070px;
+}
+.fa-arrow-up2 {
+	background-position: -1120px -2070px;
+}
+.fa-note {
+	background-position: -1214px -2070px;
+}
+.fa-params {
+	background-position: -1308px -2070px;
+}
+.fa-newspaper {
+	background-position: -1402px -2070px;
+}
+.fa-phone2 {
+	background-position: 0 -2160px;
+}
+.fa-address-book {
+	background-position: -94px -2160px;
+}
+.fa-user2 {
+	background-position: -188px -2160px;
+}
+.fa-spinner5 {
+	background-position: -278px -2160px;
+}
+.fa-spinner6 {
+	background-position: -372px -2160px;
+}
+.fa-profile {
+	background-position: -466px -2160px;
+}
+.fa-tags2 {
+	background-position: -560px -2160px;
+}
+.fa-location {
+	background-position: -654px -2160px;
+}
+.fa-map {
+	background-position: -744px -2160px;
+}

@@ -1,0 +1,242 @@
+#dadosUsuario {
+	font-size:14px;
+}
+#home .contents {
+	padding-top:20px;	
+}
+.bgAzul { background:url(../images/azul.jpg) repeat !important; }
+.btn .icon {
+	font-size:26px;
+}
+H2 .ui-btn {
+	margin:0px !important;	
+}
+.titleArea {
+	font-size:25px;
+	vertical-align:middle;
+	line-height:50px;
+	padding-left:10px;
+}
+.ic {
+	color: #FFF;
+	text-align:center;
+	height:  30%;
+	margin-bottom: 0.2em;
+	padding: 3px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+}
+.ic-b {
+	color: #FFF;
+	text-align:center;
+	height:  25%;
+	margin-bottom: 0.2em;
+	padding: 3px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+}
+.ic-g {
+	color: #FFF;
+	text-align:center;
+	height:  25%;
+	margin-bottom: 0.2em;
+	padding: 3px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+}
+.ic-g2 {
+	color: #FFF;
+	text-align:center;
+	height:  26%;
+	margin-bottom: 0.2em;
+	padding: 3px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+}
+.ic-g .fa {
+	font-size:80px;
+	margin:auto;
+	margin-top:20px;
+	
+}
+.ic-g2 .fa {
+	font-size:90px;
+	margin:auto;
+	margin-top:20px;
+}
+.ic .fa {
+	font-size:50px;
+	margin:auto;
+	margin-top:20px;
+}
+.ic-blue {
+	background: #0079b6;
+}
+.ic-blue-b {
+	background: #00bd9b;
+}
+.ic-blue-c {
+	background: #23475f;
+}
+.ic-yellow {
+	background: #ff9d00;	
+}
+.ic-purple {
+	background: #af58b9;
+}
+.ic-green {
+	background: #00cd6a;
+}
+.ic-red {
+	background: #e03626;
+}
+.ic-brow {
+	background: #9c914c;
+}
+.ic-red2 {
+	background: #b30000;
+}
+.ic-orange {
+	background: #f15300;
+}
+.loginform {
+	margin: auto;
+	width: 69%;
+}
+.loginform .ui-btn  {
+	
+	
+	border-radius: 6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+.loginform .ui-btn-text {
+	color: #434343;
+}
+.fieldcontain:before, .fieldcontain:after, .fieldcontain, .ui-rangeslider:before, .ui-rangeslider:after  {
+	box-sizing:content-box !important;
+	-moz-boxsizing:content-box !important;
+	-webkit-box-sizing::content-box !important;
+}
+.ui-slider-track .ui-btn.ui-slider-handle {
+	border: 4px solid rgba(109,202,236,0.3) !important;
+}
+.ui-slider-track .ui-btn.ui-slider-handle {
+	width: 2em !important;
+	height: 2em !important;
+	margin: none !important;
+}
+/* Pre-loader */
+#pre-loader{display:block; position:absolute; width:100%; height:100%; background:#282828; z-index:900950;}
+#pre-loader img{ position:absolute; top:48%; left:51%; margin:-20px 0px 0px -45px;}
+.contador_load {  position:absolute; width:100%; top:60%; color:#FFF; text-align:center; font-weight:bold }
+#my-list {
+    padding-top : 45px;
+}
+#my-list form {
+    position :fixed;
+    top      : 15px;
+    left     : 15px;
+    width    : 100%;
+    z-index  : 1;
+}
+.dados .ui-btn-text {
+	display:none;
+}
+.mm-fixed-top {
+	width:100%;
+	z-index:100000;
+} 
+.padtop6 { padding-top:6px; padding-left:4px;}
+.itemref { font-size:9px; color:#999; text-align:center; }
+.itemtitle { font-size:10px; color:#666; min-height:60px; text-align:center; }
+/* Galeria de itens */
+/*div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }*/
+div.gallery-item { float: left; width: 31% ; padding:0px; min-height:210px ;  }
+@media (min-width: 701px) {
+	div.gallery-item { float: left; width: 31% !important; padding:0px; min-height:185px !important;  }
+}
+@media (max-width: 600px) {
+	div.gallery-item { float: left; width: 48% !important; padding:0px; min-height:200px !important;  }
+}
+@media (max-width: 340px) {
+	div.gallery-item { float: left; width: 98% !important; padding:0px; min-height:170px !important;  }
+}
+div.gallery-item { background:#FFF; display: block; margin: 2px; border: 1px solid #E6E6E6; }
+div.gallery-item img { display: block; width: 100%; height: auto; }
+.ui-header .ui-title { margin:0px !important; margin-top:5px !important; margin-left:4px !important;}
+
+
+
+
+
+
+div.item { float: left; width: 31% ; padding:0px; min-height:210px ;  }
+@media (min-width: 701px) {
+	div.item { float: left; width: 31% !important; padding:0px; min-height:185px !important;  }
+}
+@media (max-width: 600px) {
+	div.item { float: left; width: 48% !important; padding:0px; min-height:200px !important;  }
+}
+@media (max-width: 340px) {
+	div.item { float: left; width: 98% !important; padding:0px; min-height:170px !important;  }
+}
+div.item { background:#FFF; display: block; margin: 2px; border: 1px solid #E6E6E6; }
+div.item img { display: block; width: 100%; height: auto; }
+div.item .title  { font-family: 'Arial'; font-size: 2.1vw; padding:10px; }
+
+
+
+
+
+
+
+
+
+.spinner {
+      width: 70px;
+      height: 70px;
+      background-color: #FFF;
+      margin: 100px auto;
+      -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+      animation: rotateplane 1.2s infinite ease-in-out;
+    }
+    @-webkit-keyframes rotateplane {
+      0% { -webkit-transform: perspective(120px) }
+      50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+      100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+    }
+    @keyframes rotateplane {
+      0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      } 50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+    }
+a.icomenu
+{
+	background: center center no-repeat transparent !important;
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC ) !important;
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+#infobrasDetail #imagem {
+	text-align:center;
+}
+#infobrasDetail #imagem IMG { 
+	margin:6px;
+}
+#videoDetail #video {
+	text-align:center;
+	padding:10px;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+}
